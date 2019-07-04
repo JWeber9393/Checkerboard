@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: inline-block;
+    text-align: center;
+    width: 1000px;
+}
+
+.square{
+    display: inline-block;
+    width: 115px;
+    height: 115px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid grey;
+    background-color: red;
+    background-color: black;
+
+}
