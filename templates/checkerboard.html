@@ -8,13 +8,31 @@
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/cssCheckerboard.css')}}">
 </head>
 <body>
-    <div class="container">
-        <h1>Checkerboard</h1>
-        {% if num_times: %}
-        {% for x in range (0, num_times) %}
-            <div class="square"></div>
+
+    {% if y or x: %}
+        <table>
+        {% for i in range(y): %}
+            <tr>
+                {% for j in range(x): %}
+                <td class="color{{ (i + j)% 2 }}"></td>
+                {% endfor %}
+            </tr>
         {% endfor %}
-        {else:}
-    </div>
+        </table>
+
+    
+
+    {% else: %}
+        <table>
+        {% for i in range(8): %}
+            <tr>
+                {% for j in range(8): %}
+                <td class="color{{ (i + j)% 2 }}"></td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </table>
+    {% endif %}
+
 </body>
 </html>

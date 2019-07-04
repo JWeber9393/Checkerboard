@@ -1,22 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    display: inline-block;
-    text-align: center;
-    width: 1000px;
-}
-
-.square{
-    display: inline-block;
-    width: 115px;
-    height: 115px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid grey;
+.color0{
     background-color: red;
-    background-color: black;
-
 }
+.color1{
+    background-color: black;
+}
+
+    table tr td{
+        height: 50px;
+        width: 50px;
+    }
