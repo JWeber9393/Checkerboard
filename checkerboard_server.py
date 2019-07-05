@@ -7,11 +7,11 @@ def checkerboard():
     print("root route good!")
     return render_template("checkerboard.html")
 
-# @app.route("/4")
-# def checkerboard2():
-#     print('*'*100)
-#     print("num route good!")
-#     return render_template("checkerboard.html")
+@app.route("/<x>")
+def checkerboard2(x):
+    print('*'*100)
+    print("num route good!")
+    return render_template("checkerboard.html", x = int(x), y = 8)
 
 @app.route("/<x>/<y>")
 def checkerboard3(x, y):
